@@ -4,13 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-check": "eslint .",
+    "prettier-check": "prettier --check .",
+    "prettier-format": "prettier --write .",
+    "build": "",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.26.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-sonarjs": "^0.16.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
