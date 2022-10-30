@@ -1,16 +1,14 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": ["google", "plugin:sonarjs/recommended"],
-    "overrides": [
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "rules": {
-    },
-    "plugins": ["sonarjs"]
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["google", "plugin:sonarjs/recommended"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {},
+  "plugins": ["sonarjs"]
 }
