@@ -4,6 +4,10 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
+        "source": "/api/hello",
+        "function": "helloWorld"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
@@ -19,7 +23,7 @@
         "firebase-debug.log",
         "firebase-debug.*.log"
       ],
-      "predeploy": ["npm run lint && npm run format"]
+      "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run lint"]
     }
   ]
 }
